@@ -1,0 +1,87 @@
+module.exports = {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+      },
+      colors: {
+        ink: {
+          50: '#f8f4ed',
+          100: '#efe4d4',
+          200: '#e1cdba',
+          300: '#cdb18f',
+          400: '#b18d61',
+          500: '#8b6b44',
+          600: '#604730',
+          700: '#493726',
+          800: '#2f241b',
+          900: '#1d1610',
+          950: '#120f0b',
+        },
+        gold: {
+          50: '#fcf6e8',
+          100: '#f6e3b0',
+          200: '#edd07b',
+          300: '#e2ba40',
+          400: '#cfa12a',
+          500: '#b58612',
+          600: '#90650f',
+          700: '#6f4b0f',
+          800: '#4d350c',
+          900: '#2d2208',
+        },
+        sage: {
+          50: '#f4f6ef',
+          100: '#e3ebda',
+          200: '#c5d4b3',
+          300: '#9db383',
+          400: '#78925e',
+          500: '#5d7444',
+          600: '#435632',
+          700: '#334129',
+          800: '#22301e',
+          900: '#171d16',
+        },
+        rose: {
+          50: '#fcf2f4',
+          100: '#f8dfe3',
+          200: '#f0c0cb',
+          300: '#e5a0b0',
+          400: '#d4778f',
+          500: '#b8566f',
+          600: '#964a5a',
+          700: '#733a45',
+          800: '#4d282f',
+          900: '#2a181c',
+        },
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.8s ease-out both',
+        'fade-down': 'fadeDown 0.8s ease-out both',
+        mist: 'mist 16s ease-in-out infinite',
+        shimmer: 'shimmer 2s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeDown: {
+          '0%': { opacity: '0', transform: 'translateY(-24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        mist: {
+          '0%, 100%': { transform: 'translate3d(0,0,0) scale(1)' },
+          '50%': { transform: 'translate3d(20px,-20px,0) scale(1.08)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '200% 0' },
+          '100%': { backgroundPosition: '-200% 0' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
